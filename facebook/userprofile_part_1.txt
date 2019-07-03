@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #id1{background-color:palegoldenrod;}
+        #id2{background-color:paleturquoise;}
+        #id3{background-color:wheat;}
+    </style>
+</head>
+<body>
+    <div id="id1">
+        Username: 

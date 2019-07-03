@@ -1,0 +1,11 @@
+  <br>
+    </div>
+    <br><br>
+    <a href="https://liurenyu.000webhostapp.com/changeprofileform.php">
+        <input type="submit" value="Change My Profile">
+    </a><br><br>
+    <a href="https://liurenyu.000webhostapp.com/index.html">
+        <input type="submit" value="Go to front page">
+    </a>
+</body>
+</html>
