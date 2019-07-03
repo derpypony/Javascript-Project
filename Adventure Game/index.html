@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adventure Game</title>
+</head>
+<body>
+    <img src="path.png">
+    <ol type="1">
+        <li><p id="GameDescription">You are in a narrow pathway.</p></li>
+        <li><p id="GameMessage"></p></li>
+        <li><p id="HelpMessage"></p></li>
+        <ol type="a">
+            <li class="GameItemFind" id="findflute" style="display: none"><p>You find a: flute</p> 
+                <button onclick=PickUpFunction()>Pick up</button></li>
+            <li class="GameItemFind" id="findgold" style="display: none"><p>You find a: gold</p> 
+                <button onclick=PickUpFunction()>Pick up</button></li>
+            <li class="GameItemFind" id="findsword" style="display: none"><p>You find a: sword</p> 
+                <button onclick=PickUpFunction()>Pick up</button></li>
+            <li class="GameItemFind" id="findkey" style="display: none"><p>You find a: key</p> 
+                <button onclick=PickUpFunction()>Pick up</button></li>
+        </ol>
+        <br>
+        <li id="mybag">Items in your bag (Maxmum 2 Items)
+            <ol type="a"><br>
+                <li class="GameItem" id="fluteInbag" style="display: none">
+                    flute 
+                    <button onclick='DropFunction("flute")'>Drop</button> 
+                    <button onclick='UseFunction("flute")'>Use</button>
+                </li><br>
+                <li class="GameItem" id="goldInbag" style="display: none">
+                        gold 
+                    <button onclick='DropFunction("gold")'>Drop</button> 
+                    <button onclick='UseFunction("gold")'>Use</button>
+                </li><br>
+                <li class="GameItem" id="swordInbag" style="display: none">
+                    sword 
+                    <button onclick='DropFunction("sword")'>Drop</button> 
+                    <button onclick='UseFunction("sword")'>Use</button>
+                </li><br>
+                <li class="GameItem" id="keyInbag" style="display: none">
+                    key 
+                    <button onclick='DropFunction("key")'>Drop</button> 
+                    <button onclick='UseFunction("key")'>Use</button>
+                </li><br>
+            </ol>
+        </li><br>
+        <li id="selecttowhere">
+            Where do you want to go?<br><br>
+            <input type="radio" name="toLocation" value="north"> north<br>
+            <input type="radio" name="toLocation" value="east"> east<br>
+            <input type="radio" name="toLocation" value="south"> south<br>
+            <input type="radio" name="toLocation" value="west"> west<br><br>
+            <button  id="button" onclick = ToWhereFunction()>Enter</button>
+        </li>
+    </ol>
+    <script src="underscore.js"></script>
+    <script src="gameengine.js"></script>
+</body>
+</html>
