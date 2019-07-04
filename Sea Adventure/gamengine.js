@@ -15,7 +15,7 @@ var stage = document.querySelector('#stage');
 var gameMessage = document.querySelector('#gameMessage');
 var gameInfo = document.querySelector('#gameInfo');
 //code for different objects
-objectCode = {water:0, island:1, pirate:2, home:3, ship:4, monster:5};
+objectCode = {water:0, island:1, pirate:2, home:3};
 //Ship and monster Info
 var shipInfo = {i:5, j:0, gold:10, food:10, experience:0, alive:true};
 var monsterInfo = {i:1, j:2, alive:true};
