@@ -123,6 +123,7 @@ function anylysis()
             message = 'You kill the monster!';
             monsterInfo.alive = false;
             shipInfo.experience -= 4;
+            shipInfo.food += 15;
         }
         else
         {
